@@ -7,6 +7,7 @@
 #include <sys/wait.h>
 #include <sys/type.h>
 #include <fnct1.h>
+#include <string.h>
 
 
 #endif /* #ifndef SHELL_H */
