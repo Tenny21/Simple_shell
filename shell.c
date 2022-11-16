@@ -1,33 +1,18 @@
 #include "shell.h"
 
 /**
- * main - Main shell loop
- *
- * @argc: Args count
- * @argv: args v3ctor
- *
- * Return: 0 for succ3ss
+ * main - creates a simple shell
+ * @ac: argument count
+ * @av: argument vectors
+ * @env: environmental variables
+ * Return: 0 on success
  */
-
-int main(int argc, char *argv[])
+int main(int ac, char **av, char **env)
 {
-	int i, num, inf;
-	char *token;
+	(void)ac;
+	(void)av;
 
-	inf = 4;
-	
-	while (inf)
-	{
-		prompt();
-		getline();
-		token = strtok();
-		pid = fork();
-		if (pid = 0)
-		{
-			execve();
-		}
-		else
-			wait();
-	}
-	return (0)
+	prompt(env);
+
+	return (0);
 }
